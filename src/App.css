@@ -1,0 +1,245 @@
+.overlaytopon{
+    position:fixed;
+    width: 100%;
+    height: 50%;
+    background-color: red;
+}
+.overlaytopoff{
+    position: fixed;;
+    width: 100%;
+    height: 50%;
+    background-color: red;
+    animation-name: overlaytopoffslide;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes overlaytopoffslide{
+    from{top: 0%;} to {top: -100%;}
+}
+@keyframes overlaybottomoffslide{
+    from{height: 50%;} to {height: 100%;}
+}
+.overlaybottomon{
+    position:fixed;
+    top: 0%;
+    width: 100%;
+    height: 50%;
+    transform: translate(0,100%);
+    background-color: white;
+    
+}
+.overlaybottomoff{
+    position:fixed;
+    width: 100%;
+    height: 50%;
+    transform: translate(0,100%);
+    background-color: white;
+    animation-name: overlaybottomoffslide;
+    transition-timing-function: ease;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+.Appoff{
+    display: none;
+}
+.activateron{
+    outline: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 10px solid black;
+    color: rgb(214, 214, 69);
+    background-color: white;
+    font-family: pokemonFont;
+    font-size: 20px;
+}
+.activateroff{
+    outline: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 10px solid black;
+    color: rgb(214, 214, 69);
+    background-color: white;
+    font-family: pokemonFont;
+    font-size: 20px;
+}
+@keyframes activateroff{
+    from{top: 50%;} to {top: -20%;}
+}
+.pokeopenon{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background: white;
+    border-radius: 50%;
+    border: 20px solid black;
+}
+.pokeopenoff{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background: white;
+    border-radius: 50%;
+    border: 20px solid black;
+}
+.overlaymiddleon{
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+}
+.overlaymiddleoff{
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    animation-name: activateroff;
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+.hidden{
+    display: none;
+}
+.pokeball{
+    animation: rotation 1s infinite linear;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px; 
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+.Appon{
+    top:50%;
+    left: 50%;
+    padding: 15px;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    animation: appFade;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: .75s;
+    background-color: #FF3D33;
+    border: 5px solid black;
+}
+@keyframes appFade{
+    from{opacity: 0%;} to{opacity: 100%;}
+}
+.pokedex{
+    font-family: pokemonFont;
+    margin: -15px;
+    color:rgb(255, 255, 0);
+}
+.pokesubhead{
+    color: white;
+}
+.searchfieldholder{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.searchfield{
+    outline: none;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 30vh;
+    height: 5vh;
+    font-size: 25px;
+}
+.search{
+    color: black;
+    font-family: monospace;
+    border-radius: 50px;
+    background-color: yellow;
+    outline: none;
+}
+.poke{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.rightSide{
+
+}
+.pokepic{
+    width: 165px;
+    height: 165px;
+    transform: translate(0px, -10px);
+    margin-bottom: -35px;
+}
+.pokepicholder{
+    background-color: white;
+    border: 5px solid black;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+.pokeName{
+    font-family: pokemonFont;
+    color: rgb(255, 255, 0);
+    outline: black;
+    margin-top: -15px;
+}
+.pokeID{
+    font-family: monospace;
+    font-size: 30px;
+    color: white;
+}
+.desc{
+    color: white;
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 15px;
+    width: 70px;
+}
+.field{
+    width: 100px;
+    padding:3px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 237, 237);
+    border: 2px solid black;
+}
+.textBox{
+   display: flex;
+   align-items: center;
+}

@@ -1,0 +1,14 @@
+html{
+  background-color: #EAEFF2;
+  background-image: url("./poke.png");
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0%;
+}
+@font-face {
+  font-family: 'pokemonFont';
+  src: local('pokemonFont'), url('./PokemonSolid.ttf') format('truetype');
+  font-weight: normal;
+}
