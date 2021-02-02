@@ -60,7 +60,7 @@ function App() {
         <h3 className='pokesubhead'>Search for any pokemon below!</h3>
         <div className='searchfieldholder'>
           <input placeholder='Pokemon' onChange={e=>setPoke(e.target.value)} className='searchfield'></input>
-          <button className='search' onClick={e=>setLink(`http://pokeapi.co/api/v2/pokemon/${pokemon.toLowerCase()}`)}>Research</button>
+          <button className='search' onClick={e=>setLink(`https://pokeapi.co/api/v2/pokemon/${pokemon.toLowerCase()}`)}>Research</button>
         </div>
         {display[`${loading}-${isError}`]}
       </div>
