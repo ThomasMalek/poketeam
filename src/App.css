@@ -151,7 +151,7 @@
     justify-content: center;
     animation: appFade;
     animation-duration: 2s;
-    animation-fill-mode: both;
+    animation-fill-mode: backwards;
     animation-delay: .75s;
     background-color: #FF3D33;
     border: 5px solid black;
