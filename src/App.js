@@ -7,7 +7,7 @@ function App() {
   
   const [data, setData] = useState({});
   const [pokemon, setPoke] = useState('ditto');
-  const [link, setLink] = useState(`http://pokeapi.co/api/v2/pokemon/${pokemon}`);
+  const [link, setLink] = useState(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
   const [loading, setLoading] = useState(true)
   const [isError, setIsError] = useState(false);
   const [overlay, setOverlay] = useState(true);
